@@ -2,10 +2,13 @@ package fr.ath.kata.person;
 
 public class PersonService {
 
-    private PersonRepository personRepository;
+    private PersonRepositoryImpl personRepository;
 
     public PersonService() {
-        personRepository = new PersonRepository();
+    }
+
+    public PersonService(PersonRepositoryImpl repository) {
+        personRepository = repository;
     }
 
 

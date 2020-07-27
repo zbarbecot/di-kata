@@ -2,13 +2,9 @@ package fr.ath.kata.person;
 
 import java.util.List;
 
-public class PersonRepository {
+public interface PersonRepository {
 
-    public void save(Person person) {
-        throw new DatabaseNotAvailableException();
-    }
+    void save(Person person);
 
-    public List<Person> findAll() {
-        throw new DatabaseNotAvailableException();
-    }
+    List<Person> findAll();
 }
